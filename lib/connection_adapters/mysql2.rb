@@ -25,7 +25,7 @@ module ActiveRecord
             end
             "#{type}(#{quoted_comma_list(list)})"
           else
-            type_to_sql_without_enum(type, **args.merge(limit: limit)
+            type_to_sql_without_enum(type, **args.merge(limit: limit))
           end
         end
       else
